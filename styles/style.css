@@ -15,6 +15,7 @@
 */
 
 .page {
+  font-family: var(--main-font);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
