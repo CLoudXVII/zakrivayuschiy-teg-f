@@ -15,7 +15,9 @@
 */
 
 .page {
-  font-family: var(--main-font);
+  color: var(--accent-color, #00cc14);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--background-color, #fff);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }

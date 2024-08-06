@@ -1,4 +1,11 @@
 :root {
-  --main-font: Inter;
-  --accent-font: PressStart2P;
+  /* fonts */
+  --main-font: 'Inter';
+  --accent-font: 'PressStart2P';
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
+
+  /* colors */
+  --background-color: #fff;
+  --accent-color: #000;
 }
