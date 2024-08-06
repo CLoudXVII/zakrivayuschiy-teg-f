@@ -15,9 +15,14 @@
 */
 
 .page {
-  color: var(--accent-color, #00cc14);
+  color: var(--main-color, #00cc14);
   font-family: var(--main-font, sans-serif);
   background-color: var(--background-color, #fff);
+  background-image: var(--background-image, #fff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
