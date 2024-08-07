@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
 
     <title>Закрывающий тег</title>
@@ -11,16 +11,22 @@
     <link rel="icon" href="./svg/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header__title">
+        &lt/html&gt
+      </h1>
+      <p class="header__subtitle">
+        Закрывающий тег
+      </p>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -47,18 +53,43 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
+      <div class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <picture>
+          <source srcset="./images/cat.avif" type="image/avif">
+          <source srcset="./images/cat.webp" type="image/webp">
+          <img class="card__cover" src="./images/cat.jpg" alt="Мокрый коть">
+        </picture>
+        <div class="card__content">
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p>
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+        <div class="card__action">
+          <button class="card__icon-button">
 
+          </button>
+          <button class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
     </main>
-    
+
+    <footer class="footer">
+      <button class="footer__button">
+        <svg width="21" height="21" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="footer__button-text">Сохранить на память</span>
+      </button>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<!-- 
-  <picture>
-    <source srcset="./images/bus.avif" type="image/avif">
-    <source srcset="./images/bus.webp" type="image/webp">
-    <img src="./images/bus.jpg" alt="Дом на колесах в стиле пиксель-арт">
-  </picture>
--->
