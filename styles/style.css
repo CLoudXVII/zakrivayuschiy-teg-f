@@ -228,32 +228,36 @@ picture {
 .card__action {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
+  gap: 8px;
   padding: 0 25px 17px 0;
 }
 
 .card__icon-button {
-  border: 2px solid transparent;
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: 2px solid transparent;
+  outline-offset: -1.5px;
+  font-size: 0;
   background-color: transparent;
   transition: 0.3s ease;
 }
 
-.card__icon-button:focus {
-  outline: none;
-}
-
 .card__icon-button:focus-visible {
-  border-color: var(--main-color, #000);
+  outline-color: var(--main-color, #000);
 }
 
 .button {
   position: relative;
+  border: 2px solid var(--main-color, #000);
   color: var(--button-color, #fff);
   font-family: var(--accent-font, monospace);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 90%;
+  background-color: var(--background-color, #fff);
   transition: 0.3s ease;
 }
 
@@ -280,10 +284,8 @@ picture {
 }
 
 .card__like-button {
-  border: 2px solid var(--main-color, #000);
   padding: 10.5px 0;
   inline-size: 130px;
-  background-color: transparent;
 }
 
 .button__text {
@@ -301,9 +303,7 @@ picture {
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 2px solid var(--main-color, #000);
   padding: 15px 20px;
-  background-color: var(--background-color, #000);
 }
 
 .footer__button svg {
@@ -314,4 +314,51 @@ picture {
 
 .footer__button__text {
   padding-block-start: 4px;
+}
+
+.modal {
+  padding: 30px;
+  color: var(--main-color, #000);
+  background-color: var(--background-color, #fff);
+  max-inline-size: 353px;
+  inline-size: 100%;
+}
+
+.modal::backdrop {
+  opacity: 0.75;
+  background-color: #000;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-block-end: 30px;
+}
+
+.modal__content svg {
+  max-inline-size: 39px;
+}
+
+.modal__title {
+  font-family: var(--accent-font, monospace);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.modal__button {
+  width: 100%;
+  padding: 12.5px 0;
+  text-transform: uppercase;
+}
+
+@media (width <= 375px) {
+  .modal {
+    padding: 30px 42px;
+    max-inline-size: 341px;
+  }
 }
