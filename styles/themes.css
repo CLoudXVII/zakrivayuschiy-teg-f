@@ -8,20 +8,21 @@
   --sparks-color: #f00;
   --background-image:
     repeating-linear-gradient(
-      to right, 
-      #d3d3d3 0px 2px, 
+      to right,
+      #d3d3d3 0px 2px,
       transparent 2px 4px
     ),
     repeating-linear-gradient(
-      to bottom, 
-      #d3d3d3 0px 2px, 
+      to bottom,
+      #d3d3d3 0px 2px,
       transparent 2px 4px
     ),
     linear-gradient(
       to bottom,
       #e7e7e7 0.01%,
       #1a1a1a
-    ); 
+    )
+    ;
 }
 
 :root.theme-dark {
@@ -34,20 +35,21 @@
   --sparks-color: #f00;
   --background-image:
     repeating-linear-gradient(
-      to right, 
-      #000 0px 2px, 
+      to right,
+      #000 0px 2px,
       transparent 2px 4px
     ),
     repeating-linear-gradient(
-      to bottom, 
-      #000 0px 2px, 
+      to bottom,
+      #000 0px 2px,
       transparent 2px 4px
     ),
     linear-gradient(
       to bottom,
       #007f0c,
       #004306
-    );   
+    )
+    ;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,19 +63,20 @@
     --sparks-color: #f00;
     --background-image:
       repeating-linear-gradient(
-        to right, 
-        #000 0px 2px, 
+        to right,
+        #000 0px 2px,
         transparent 2px 4px
       ),
       repeating-linear-gradient(
-        to bottom, 
-        #000 0px 2px, 
+        to bottom,
+        #000 0px 2px,
         transparent 2px 4px
       ),
       linear-gradient(
         to bottom,
         #007f0c,
         #004306
-      ); 
+      )
+      ;
   }
 }

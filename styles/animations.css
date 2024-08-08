@@ -95,3 +95,9 @@
     opacity: 0;
   }
 }
+
+@keyframes hue-rotation {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
