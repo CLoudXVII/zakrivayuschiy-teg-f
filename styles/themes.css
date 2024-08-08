@@ -3,6 +3,9 @@
   --accent-font-weight: 700;
   --background-color: #fff;
   --main-color: #000;
+  --button-color: #fff;
+  --contour-color: #000;
+  --sparks-color: #f00;
   --background-image:
     repeating-linear-gradient(
       to right, 
@@ -27,6 +30,9 @@
   --accent-font-weight: 785;
   --background-color: #000;
   --main-color: #00cc14;
+  --button-color: #00cc14;
+  --contour-color: #00cc14;
+  --sparks-color: #f00;
   --background-image:
     repeating-linear-gradient(
       to right, 
@@ -52,6 +58,9 @@
     --accent-font-weight: 785;
     --background-color: #000;
     --main-color: #00cc14;
+    --button-color: #00cc14;
+    --contour-color: #00cc14;
+    --sparks-color: #f00;
     --background-image:
       repeating-linear-gradient(
         to right, 

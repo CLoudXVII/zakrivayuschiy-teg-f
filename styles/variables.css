@@ -8,6 +8,11 @@
   /* colors */
   --background-color: #fff;
   --main-color: #000;
+  --button-color: #fff;
+
+  /* heart animation */
+  --contour-color: #000;
+  --sparks-color: #f00;
 
   /* background */
   --background-image:
