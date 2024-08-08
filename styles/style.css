@@ -137,10 +137,44 @@ picture {
   line-height: 22px;
 }
 
-.card__cover {
+.card__image-container {
+  position: relative;
+}
+
+.card__image-label {
+  position: absolute;
+  opacity: 0.5;
+  color: var(--main-color, #000);
+  font-family: var(--accent-font, monospace);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-shadow: 
+    1px 0 0 var(--background-color, #fff),
+    0 1px 0 var(--background-color, #fff),
+    -1px 0 0 var(--background-color, #fff),
+    0 -1px 0 var(--background-color, #fff)
+  ;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  mix-blend-mode: hard-light;
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .card__image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 0.5px var(--background-color, #fff);
+    text-stroke: 0.5px var(--background-color, #fff);
+  }
+}
+
+.card__image {
   border-block-start: 2px solid var(--main-color, #000);
   border-block-end: 2px solid var(--main-color, #000);
   inline-size: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card__content {
