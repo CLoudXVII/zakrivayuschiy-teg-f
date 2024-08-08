@@ -1,12 +1,9 @@
-/*
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-*/
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font, sans-serif);
+    font-variation-settings: "wght" var(--main-font-weight, 400), "wdth" 100, "opsz" 0;
+  }
+}
 
 .page {
   margin: 0 auto;
@@ -40,14 +37,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-inline-size: 700px;
-  font-variation-settings: "wdth" 100, "opsz" 0;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-font, sans-serif);
-    font-variation-settings: "wdth" 100, "opsz" 0;
-  }
+  font-variation-settings: "wght" var(--main-font-weight, 400), "wdth" 100, "opsz" 0;
 }
 
 .header {
@@ -66,7 +56,6 @@
   margin-block-end: 20px;
   color: var(--main-color, #000);
   font-family: var(--accent-font, monospace);
-  font-weight: 400;
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-style: normal;
   line-height: 100%;
@@ -78,7 +67,6 @@
   margin-block-end: 25px;
   color: var(--main-color, #000);
   font-family: var(--accent-font, monospace);
-  font-weight: 400;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-style: normal;
   line-height: 100%;
@@ -104,7 +92,6 @@
   padding: 0;
   color: var(--main-color, #000);
   font-family: var(--accent-font);
-  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 100%;
@@ -172,7 +159,7 @@ picture {
   padding: 5px 0 4px 10px;
   color: var(--main-color, #000);
   font-family: var(--main-font, sans-serif);
-  font-weight: var(--accent-font-weight, 700);
+  font-variation-settings: "wght" var(--accent-font-weight, 700), "wdth" 100, "opsz" 0;
   font-size: 18px;
   font-style: normal;
   line-height: 22px;
@@ -191,7 +178,6 @@ picture {
   opacity: 0.5;
   color: var(--main-color, #000);
   font-family: var(--accent-font, monospace);
-  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 100%;
@@ -225,7 +211,6 @@ picture {
   padding: 25px;
   color: var(--main-color, #000);
   font-family: var(--main-font, sans-serif);
-  font-weight: var(--main-font-weight, 400);
   font-size: 18px;
   font-style: normal;
   line-height: 117%;
@@ -247,7 +232,7 @@ picture {
   outline-offset: -1.5px;
   font-size: 0;
   background-color: transparent;
-  transition: 0.3s ease;
+  transition: outline-color 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
@@ -259,12 +244,11 @@ picture {
   border: 2px solid var(--main-color, #000);
   color: var(--button-color, #fff);
   font-family: var(--accent-font, monospace);
-  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 90%;
   background-color: var(--background-color, #fff);
-  transition: 0.3s ease;
+  transition:box-shadow 0.3s ease;
 }
 
 .button:focus {
@@ -280,7 +264,7 @@ picture {
   position: absolute;
   inset: 0;
   background-color: var(--main-color, #000);
-  transition: 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: center left;
 }
@@ -349,7 +333,6 @@ picture {
 
 .modal__title {
   font-family: var(--accent-font, monospace);
-  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 150%;
