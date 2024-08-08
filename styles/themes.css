@@ -21,8 +21,7 @@
       to bottom,
       #e7e7e7 0.01%,
       #1a1a1a
-    )
-  ; 
+    ); 
 }
 
 :root.theme-dark {
@@ -48,8 +47,7 @@
       to bottom,
       #007f0c,
       #004306
-    )
-  ;   
+    );   
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,7 +74,6 @@
         to bottom,
         #007f0c,
         #004306
-      )
-    ; 
+      ); 
   }
 }
