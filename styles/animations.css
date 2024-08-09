@@ -10,7 +10,7 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: liked-heart 0.3s ease-in 0.1s;
+  animation: liked-heart 0.3s alternate ease-in 0.1s;
 }
 
 .contour {
@@ -65,7 +65,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: liked-sparks 0.3s 0.3s ease-in;
+  animation: liked-sparks 0.3s 0.3s alternate ease-in;
 }
 
 @keyframes liked-heart {
