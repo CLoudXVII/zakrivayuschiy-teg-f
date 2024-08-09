@@ -185,8 +185,8 @@ picture {
     -1px 0 0 var(--background-color, #fff),
     0 -1px 0 var(--background-color, #fff)
   ;
-  inset-inline-end: 25px;
-  inset-block-start: 25px;
+  inset-inline-end: clamp(0.688rem, 0.379rem + 1.315vw, 1.563rem);
+  inset-block-start: clamp(1.313rem, 1.224rem + 0.376vw, 1.563rem);
   mix-blend-mode: hard-light;
 }
 
